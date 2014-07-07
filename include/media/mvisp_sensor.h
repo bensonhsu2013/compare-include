@@ -15,7 +15,6 @@
 
 #ifndef _MVISP_SENSOR_H_
 #define _MVISP_SENSOR_H_
-#include <linux/mvisp.h>
 
 struct sensor_datafmt {
 	enum v4l2_mbus_pixelcode	code;
@@ -32,6 +31,4 @@ struct sensor_reg {
 	unsigned char val;
 };
 
-extern int mvisp_set_fclk_dphy(struct v4l2_subdev *sd,
-		struct v4l2_sensor_csi_dphy *sensor_dphy);
 #endif
